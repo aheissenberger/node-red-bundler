@@ -1,0 +1,69 @@
+[
+  {
+    "id": "523972b2.04908c",
+    "type": "tab",
+    "label": "Flow 1",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "92a73334.57bf48",
+    "type": "lambda in",
+    "z": "523972b2.04908c",
+    "name": "",
+    "x": 90,
+    "y": 120,
+    "wires": [
+      [
+        "b4871dda.ccf24"
+      ]
+    ]
+  },
+  {
+    "id": "b4871dda.ccf24",
+    "type": "function",
+    "z": "523972b2.04908c",
+    "name": "",
+    "func": "\n\nreturn {payload: msg.payload.path, test:2};",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 290,
+    "y": 120,
+    "wires": [
+      [
+        "78ce54d8.6bd434",
+        "26ed8d3d.b32b9a"
+      ]
+    ]
+  },
+  {
+    "id": "26ed8d3d.b32b9a",
+    "type": "debug",
+    "z": "523972b2.04908c",
+    "name": "Lamda OUT",
+    "active": true,
+    "tosidebar": true,
+    "console": true,
+    "tostatus": true,
+    "complete": "payload",
+    "targetType": "msg",
+    "statusVal": "payload",
+    "statusType": "auto",
+    "x": 470,
+    "y": 200,
+    "wires": []
+  },
+  {
+    "id": "78ce54d8.6bd434",
+    "type": "lambda out",
+    "z": "523972b2.04908c",
+    "name": "",
+    "lambda_proxy_helper": false,
+    "x": 480,
+    "y": 120,
+    "wires": []
+  }
+]
