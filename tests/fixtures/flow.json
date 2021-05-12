@@ -24,7 +24,7 @@
     "type": "function",
     "z": "523972b2.04908c",
     "name": "",
-    "func": "\n\nreturn {payload: msg.payload.path, test:2};",
+    "func": "\n\nreturn {payload: msg.payload.path, context: msg.context};",
     "outputs": 1,
     "noerr": 0,
     "initialize": "",
